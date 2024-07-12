@@ -746,7 +746,7 @@ html {
 	border-radius: 2rem;
 	cursor: pointer;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .button-group-blog {
@@ -1028,9 +1028,9 @@ html {
 		display: none;
 	}
 
-	.content-shopping-cart {
-		display: none;
-	}
+	/*.content-shopping-cart {*/
+	/*	display: none;*/
+	/*}*/
 
 	.navbar {
 		padding: 1rem 2rem;
@@ -1101,10 +1101,7 @@ html {
 	}
 
 	.container-blogs {
-		overflow: hidden;
-		grid-template-columns: 1fr 1fr;
-
-		height: 52rem;
+		grid-template-columns: repeat(1, 1fr);
 	}
 
 	.menu-footer {
@@ -1185,7 +1182,7 @@ html {
 
 	.container-blogs {
 		grid-template-columns: 1fr;
-		height: 75rem;
+		height: auto;
 	}
 
 	.content-blog h3 {

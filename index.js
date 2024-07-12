@@ -183,6 +183,31 @@ document.getElementById("link1").addEventListener("click", () => {
 });
 
 document.getElementById("link2").addEventListener("click", () => {
-  const productsSection = document.getElementById("products-heading");
-  productsSection.scrollIntoView({ behavior: "smooth" });
+  const element = document.getElementById("products-heading");
+  const position = element.getBoundingClientRect().top + window.scrollY;
+
+  window.scrollTo({
+    top: position - 140,
+    behavior: "smooth",
+  });
+});
+
+document.getElementById("link3").addEventListener("click", () => {
+  const element = document.getElementById("about-us");
+  const position = element.getBoundingClientRect().top + window.scrollY;
+
+  window.scrollTo({
+    top: position - 115,
+    behavior: "smooth",
+  });
+});
+
+document.getElementById("link4").addEventListener("click", () => {
+  const element = document.getElementById("mapa");
+  const position = element.getBoundingClientRect().top + window.scrollY;
+
+  window.scrollTo({
+    top: position - 150,
+    behavior: "smooth",
+  });
 });
