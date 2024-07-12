@@ -30,7 +30,7 @@ function renderCart() {
 <div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src=${product.image} style="max-width: 200px" class="card-img" alt="Imagen del Producto">
+      <img src=${product.image} class="card-img" alt="Imagen del Producto">
     </div>
     <div class="col-md-8">
       <div class="card-body">
